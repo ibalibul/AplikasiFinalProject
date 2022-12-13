@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "158667593788",
+    "project_id": "aplikasifinalprojeck",
+    "storage_bucket": "aplikasifinalprojeck.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158667593788:android:9742b7db7f716bf48ccb39",
+        "android_client_info": {
+          "package_name": "com.iqbal.aplikasifinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158667593788-nhmqme98ojipt87h4m81664bgu51a5sa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqbal.aplikasifinalproject",
+            "certificate_hash": "5b48935680d8fde137d1efdf502b86706e74746d"
+          }
+        },
+        {
+          "client_id": "158667593788-kr1rctqo5afqa83kfas5gkckp3ab07i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvvUHct8dFhQZFu7ngBi8CIi6S3epZn28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158667593788-kr1rctqo5afqa83kfas5gkckp3ab07i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

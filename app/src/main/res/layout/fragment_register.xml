@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/txtSingUp"
+        android:text="Sing Up"
+        style="@style/headerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edFullnameRegist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSingUp"
+        app:boxBackgroundColor="@color/white"
+        android:layout_margin="5dp"
+        android:hint="Fullname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edEmailRegist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFullnameRegist"
+        app:boxBackgroundColor="@color/white"
+        android:layout_margin="5dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edPasswordEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edEmailRegist"
+        app:boxBackgroundColor="@color/white"
+        android:layout_margin="5dp"
+        app:endIconMode="password_toggle"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/CheckboxRegister"
+        android:text="I agree to the Terms And Conditions and Privacy Policy"
+        android:layout_below="@+id/edPasswordEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:text="Sign Up"
+        android:layout_below="@+id/CheckboxRegister"
+        android:background="@drawable/bg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/RLGaris2"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp">
+
+        <View
+            android:id="@+id/garis2"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/smokey_700"/>
+
+        <TextView
+            android:text="OR"
+            android:layout_marginStart="1dp"
+            android:layout_toRightOf="@+id/garis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/garis3"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/smokey_700"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnGoogleRegist"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLGaris2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_google"
+        android:text="Login with Google" />
+
+    <TextView
+        android:text="Already have an account ?"
+        android:layout_below="@+id/btnGoogleRegist"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:text="Sign In"
+        android:textColor="@color/oren"
+        android:layout_below="@+id/btnGoogleRegist"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

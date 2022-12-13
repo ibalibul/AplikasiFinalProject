@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/arrow_Profile"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24_black"
+        android:layout_margin="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/text_Judul"
+        android:text="Profile"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/arrow_Profile"
+        android:layout_margin="15dp"
+        android:layout_width="186dp"
+        android:layout_height="36dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:src="@drawable/imgprofile"
+        android:layout_below="@+id/text_Judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+
+    <Button
+        android:id="@+id/btnBahasa"
+        android:text="Changge app language"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/boladunia"
+        android:layout_below="@+id/imgProfile"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAccountname"
+        android:text="Changge account name"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/profile"
+        android:layout_below="@+id/btnBahasa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAccountPassword"
+        android:text="Change account Password"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@+id/btnAccountname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:text="Help"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/info"
+        android:layout_below="@+id/btnAccountPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:text="History"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/imghistori"
+        android:layout_below="@+id/btnHelp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
