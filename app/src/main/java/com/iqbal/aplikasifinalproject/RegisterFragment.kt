@@ -38,7 +38,6 @@ class RegisterFragment : Fragment() {
         var fullname =  binding.editFullname.text.toString()
         var password = binding.editPassword.text.toString()
 
-         addFilm(fullname,password)
 
         }
 
@@ -51,16 +50,6 @@ class RegisterFragment : Fragment() {
 
 
 
-    }
-
-    fun addFilm(name : String, password : String){
-
-        viewmodel = ViewModelProvider(this).get(ViewModelUser::class.java)
-        viewmodel.callPostApiDataUser(name,password)
-        viewmodel.postDataUser().observe(viewLifecycleOwner, Observer {
-            if ( it != null)
-                Toast.makeText(context, "Selamat Datang", Toast.LENGTH_SHORT).show()
-        })
     }
 
 

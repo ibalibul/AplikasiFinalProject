@@ -23,11 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textHeader"
         android:padding="10dp"
+        app:errorEnabled="true"
         android:layout_margin="5dp"
         app:boxBackgroundColor="@color/white"
         android:hint="Email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -40,10 +42,12 @@
         android:layout_below="@+id/edEmail"
         android:padding="10dp"
         android:layout_margin="5dp"
+        app:errorEnabled="true"
         app:boxBackgroundColor="@color/white"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"

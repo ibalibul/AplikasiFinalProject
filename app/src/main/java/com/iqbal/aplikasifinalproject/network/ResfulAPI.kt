@@ -1,9 +1,10 @@
 package com.iqbal.aplikasifinalproject.network
 
 
-import com.iqbal.aplikasifinalproject.model.DataUser
-import com.iqbal.aplikasifinalproject.model.GetResponsesDataUserItem
-import com.iqbal.aplikasifinalproject.model.ResponseDataFilmItem
+import binar.academy.flightgoadmin.model.tiket.TiketResponse
+import com.iqbal.aplikasifinalproject.model.user.Data
+import com.iqbal.aplikasifinalproject.model.user.UserDataClass
+import com.iqbal.aplikasifinalproject.model.user.UserResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -11,9 +12,11 @@ import retrofit2.http.POST
 
 interface ResfulAPI {
 
-    @GET("film")
-    fun getAllFilm() : Call<List<ResponseDataFilmItem>>
+    @GET("ticket")
+    fun getAllTic() : Call<TiketResponse>
 
-    @POST("user")
-    fun addDataUser(@Body user : DataUser) : Call<GetResponsesDataUserItem>
+
+    @POST("login")
+    fun authLogin(@Body login: UserDataClass): Call<UserResponse>
+
 }
